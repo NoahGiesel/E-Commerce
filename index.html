@@ -5,26 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ecommerce Firm website</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
     <link rel="stylesheet" href="./style/style.css" />
     <script src="https://use.fontawesome.com/c0fb8f7cb2.js"></script>
   </head>
   <body>
-    <!--
-
-        header 
-        landing
-        three img  + txt 
-        
-
-
-
-    -->
-
     <header id="js-header">
       <div class="container clearfix">
-        <img src="https://peoplepng.com/wp-content/uploads/2019/04/firma-digital-png-5.png" alt="" id="logo">
+        <h1 id="logo">Logo</h1>
         <ul class="navigation-ul">
           <li>
             <a href=""> <i class="fa fa-user"></i> </a>
@@ -34,70 +27,116 @@
           </li>
           <li>
             <a href=""> <i class="fa fa-shopping-cart"></i> </a>
-          </li>
+          </li> 
         </ul>
+
+          <!-- hamburger -->
+
+    <div id="outer">
+        <div
+          id="menu-icon-wrapper"
+          class="menu-icon-wrapper"
+          style="visibility: visible;"
+        >
+          <svg width="1000px" height="1000px">
+            <path
+              class="path1"
+              d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"
+            ></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path
+              class="path3"
+              d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"
+            ></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
       </div>
+      </div>
+
+      
     </header>
+
+   
 
     <!-- laning page -->
 
-       <div class="slider">
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/152229/slider-img-1.jpg"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/152229/slider-img-2.jpg"
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/152229/slider-img-3.jpg"
-          />
-        </div>
+    <div class="landing">
+      <div class="bg">
+        <p class="banner">More than 1.000 products!</p>
+        <p class="belowBanner">shoes, T-shirts, bags and much more...</p>
+        <a href="#threeCol"> more</a>
       </div>
- 
+    </div>
 
     <!-- three col sec -->
 
-      <div class="threeCol">
-        <div class="first">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est cum ea ex unde sapiente eligendi numquam a tempora ab culpa fuga quibusdam porro beatae, voluptatum aliquid quo suscipit blanditiis!
-            </p>
-        </div>
-        <div class="second">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est cum ea ex unde sapiente eligendi numquam a tempora ab culpa fuga quibusdam porro beatae, voluptatum aliquid quo suscipit blanditiis!
-          </p>
-        </div>
-        <div class="third">
-          <img src="https://purepng.com/public/uploads/large/purepng.com-wrist-band-watchclockbelltimealarmwristbandleather-belt-1421526465472flhr3.png" alt="">
-        </div>
+    <div class="threeCol" id="threeCol">
+      <div class="first">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est
+          cum ea ex unde sapiente eligendi numquam a tempora ab culpa fuga
+          quibusdam porro beatae, voluptatum aliquid quo suscipit blanditiis!
+        </p>
       </div>
+      <div class="second">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est
+          cum ea ex unde sapiente eligendi numquam a tempora ab culpa fuga
+          quibusdam porro beatae, voluptatum aliquid quo suscipit blanditiis!
+        </p>
+      </div>
+      <div class="third">
+        <img
+          src="https://purepng.com/public/uploads/large/purepng.com-wrist-band-watchclockbelltimealarmwristbandleather-belt-1421526465472flhr3.png"
+          alt=""
+        />
+      </div>
+    </div>
 
+    <!-- two col section -->
 
+    <div class="twoColSection">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0231/2060/9358/files/Home_BW_Closeup_1024x.jpg?v=1556563118"
+        alt=""
+      />
+      <div class="first">
+        <h5>title goes here</h5>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta alias
+          adipisci molestiae aliquid assumenda consequatur quisquam quasi?
+          Temporibus quidem, fuga quasi ut dolor error expedita.
+        </p>
+      </div>
+    </div>
 
+    <!-- two col section -->
 
-
-
-
-
-
-
-
-
+    <div class="twoColSection">
+      <div class="first">
+        <h5>title goes here</h5>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta alias
+          adipisci molestiae aliquid assumenda consequatur quisquam quasi?
+          Temporibus quidem, fuga quasi ut dolor error expedita.
+        </p>
+      </div>
+      <img
+        class="secondImg"
+        src="https://cdn.shopify.com/s/files/1/0231/2060/9358/files/Home_White_Wide_1024x.jpg?v=1556563138"
+        alt=""
+      />
+    </div>
 
     <!-- scripts -->
 
-
     <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
