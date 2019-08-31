@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
 html,
 body {
   height: 200%;
   width: 100%;
-  background-color: aliceblue;
+  background-color: #F4F0E9;
   padding: 0;
   margin: 0;
 }
@@ -29,29 +30,25 @@ header.smaller nav a {
 
 header {
   width: 100%;
-  height: 9em;
-  overflow: hidden;
+  height: 7em;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  border-bottom: solid 0.5em aliceblue;
-  background-color: aliceblue;
+  border-bottom: solid 0.5em #F4F0E9;
+  background-color: #F4F0E9;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
 
-header h1#logo {
+header #logo {
   display: inline-block;
-  line-height: 3em;
+  line-height: 2em;
   margin: 0;
-  padding: 0 1em;
-  background-color: aliceblue;
+  padding: 0;
   float: left;
   font-family: "Open Sans", sans-serif;
   font-size: 60px;
-  color: #333;
-  text-shadow: 0.1em 0.03em #d8d6d6;
   font-weight: 400;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -61,9 +58,10 @@ header.smaller {
   height: 75px;
 }
 
-header.smaller h1#logo {
-  line-height: 75px;
-  font-size: 30px;
+header.smaller #logo {
+  width: 40%;
+  float: left;
+  line-height: 0;
 }
 
 .navigation-ul {
@@ -136,5 +134,52 @@ header.smaller h1#logo {
 
 .slick-dots li.slick-active button {
   background-color: #222;
+}
+
+.threeCol {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  margin: 50px 0;
+  padding: 0 50px;
+  border-radius: 10px;
+}
+
+.threeCol .first {
+  background: #ece4d5;
+}
+
+.threeCol .second {
+  background: #ece4d5;
+}
+
+.threeCol .third {
+  background: #ece4d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.threeCol .third img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.threeCol p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,16 @@
+// fonts import 
+
+
+//three col sec
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+
+
 html,
 body {
   height: 200%;
   width: 100%;
-  background-color: aliceblue;
+  background-color: #F4F0E9;
   padding: 0;
   margin: 0;
 }
@@ -13,7 +21,8 @@ body {
 }
 // colors
 
-$header: aliceblue;
+$header: #F4F0E9;
+$headerDark: rgb(236, 228, 213);
 $logo : #333;
 
 // header
@@ -38,8 +47,7 @@ header.smaller nav a {
 
 header {
   width: 100%;
-  height: 9em;
-  overflow: hidden;
+  height: 7em; 
   position: fixed;
   top: 0;
   left: 0;
@@ -49,18 +57,15 @@ header {
   transition: height 0.3s;
 }
 
-header h1#logo {
+header #logo {
   display: inline-block;
-  line-height: 3em;
+  line-height: 2em;
   margin: 0;
-  padding: 0 1em;
-  background-color: $header;
-  float: left;
+  padding: 0 ;
+   float: left;
   font-family: "Open Sans", sans-serif;
-  font-size: 60px;
-  color: $logo;
-  text-shadow: 0.1em 0.03em rgb(216, 214, 214);
-  font-weight: 400;
+  font-size: 60px; 
+   font-weight: 400;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -72,9 +77,11 @@ header.smaller {
   height: 75px;
 }
 
-header.smaller h1#logo {
-  line-height: 75px;
-  font-size: 30px;
+header.smaller #logo { 
+  width: 40%;
+  float: left;
+   line-height: 0; 
+
 }
 
 .navigation-ul {
@@ -150,3 +157,61 @@ header.smaller h1#logo {
 		}
         
 } 
+
+
+  // three col section 
+
+  .threeCol { 
+      display: grid ; 
+      grid-template-columns: auto auto auto;
+      grid-template-rows: none;
+      margin: 50px 0 ; 
+      padding: 0 50px ; 
+      border-radius: 10px;
+
+
+      .first {
+        background:  $headerDark;
+      }
+
+      .second {
+        background:  $headerDark;
+      }
+
+      .third {
+        background:  $headerDark;
+        display: flex;
+        justify-content: center;
+        align-items : center;
+
+          img {
+            width: 80%;
+            margin: 0 auto;
+          }
+      }
+
+      p {
+        width: 80% ; 
+        margin: 0 auto;
+        padding: 50px 0;
+        line-height: 30px;
+        font-size: 18px ; 
+        font-family: 'Noto Sans JP', sans-serif;
+
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
