@@ -337,6 +337,81 @@ header.smaller h1#logo {
           transform: translateY(-10%);
 }
 
+hr {
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.newsletter {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.newsletter h3 {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.newsletter input {
+  margin: 60px 0;
+  padding: 12px 40px;
+  width: 40%;
+  border: 1px solid black;
+}
+
+.newsletter button {
+  padding: 12px 40px;
+  color: #f8f8f8;
+  background-color: #333;
+  cursor: pointer;
+}
+
+footer {
+  height: 45vh;
+  background-color: #333;
+  width: 100%;
+  margin-top: 100px;
+  color: #f8f8f8;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 50px 0 15px 0;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+footer p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 7px 0;
+  cursor: pointer;
+}
+
+footer p:hover {
+  text-decoration: underline;
+}
+
 .logo {
   -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
