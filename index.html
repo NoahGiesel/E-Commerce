@@ -5,34 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ecommerce Firm website</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+    
+    
+    <!-- animate css --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- AOS scroll animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="./style/style.css" />
     <script src="https://use.fontawesome.com/c0fb8f7cb2.js"></script>
+
+ 
+ 
+
+
   </head>
   <body>
     <header id="js-header">
       <div class="container clearfix">
-        <h1 id="logo">Logo</h1>
-        <ul class="navigation-ul">
+        <h1 id="logo" class="logo animated fadeInLeft  ">Logo</h1>
+        <ul class="navigation-ul  ">
           <li>
-            <a href=""> <i class="fa fa-user"></i> </a>
+            <a href=""> <i class="fa fa-user animated fadeInUp delay-1s"></i> </a>
           </li>
           <li>
-            <a href=""> <i class="fa fa-heart"></i> </a>
+            <a href=""> <i class="fa fa-heart animated fadeInUp "></i> </a>
           </li>
           <li>
-            <a href=""> <i class="fa fa-shopping-cart"></i> </a>
+            <a href=""> <i class="fa fa-shopping-cart animated fadeInUp"></i> </a>
           </li> 
         </ul>
 
           <!-- hamburger -->
 
-    <div id="outer">
+    <div id="outer" class="menu">
         <div
           id="menu-icon-wrapper"
           class="menu-icon-wrapper"
@@ -60,34 +68,36 @@
    
 
     <!-- laning page -->
+     <div class="landing">
+      <div class="bg  ">
+          <div class="container landingdelay animated fadeInUp "> 
+          <p class="banner  ">More than 1.000 products!</p>
+          <p class="belowBanner">shoes, T-shirts, bags and much more...</p>
+          <a href="#threeCol"> more</a>
+        </div>
 
-    <div class="landing">
-      <div class="bg">
-        <p class="banner">More than 1.000 products!</p>
-        <p class="belowBanner">shoes, T-shirts, bags and much more...</p>
-        <a href="#threeCol"> more</a>
       </div>
     </div>
 
     <!-- three col sec -->
 
-    <div class="threeCol" id="threeCol">
+    <div class="threeCol" id="threeCol"  data-aos="fade-in" >
       <div class="first">
-        <p>
+        <p data-aos="fade-right">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est
           cum ea ex unde sapiente eligendi numquam a tempora ab culpa fuga
           quibusdam porro beatae, voluptatum aliquid quo suscipit blanditiis!
         </p>
       </div>
       <div class="second">
-        <p>
+        <p data-aos="fade-down">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est
           cum ea ex unde sapiente eligendi numquam a tempora ab culpa fuga
           quibusdam porro beatae, voluptatum aliquid quo suscipit blanditiis!
         </p>
       </div>
       <div class="third">
-        <img
+        <img data-aos="fade-up"
           src="https://purepng.com/public/uploads/large/purepng.com-wrist-band-watchclockbelltimealarmwristbandleather-belt-1421526465472flhr3.png"
           alt=""
         />
@@ -97,13 +107,13 @@
     <!-- two col section -->
 
     <div class="twoColSection">
-      <img
+      <img data-aos="fade-right"
         src="https://cdn.shopify.com/s/files/1/0231/2060/9358/files/Home_BW_Closeup_1024x.jpg?v=1556563118"
         alt=""
       />
-      <div class="first">
+      <div class="first" data-aos="fade-left">
         <h5>title goes here</h5>
-        <p>
+        <p   >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta alias
           adipisci molestiae aliquid assumenda consequatur quisquam quasi?
           Temporibus quidem, fuga quasi ut dolor error expedita.
@@ -114,7 +124,7 @@
     <!-- two col section -->
 
     <div class="twoColSection">
-      <div class="first">
+      <div class="first"  data-aos="fade-right">
         <h5>title goes here</h5>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta alias
@@ -123,7 +133,7 @@
         </p>
       </div>
       <img
-        class="secondImg"
+        class="secondImg" data-aos="fade-left"
         src="https://cdn.shopify.com/s/files/1/0231/2060/9358/files/Home_White_Wide_1024x.jpg?v=1556563138"
         alt=""
       />
@@ -142,6 +152,11 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
+    <!-- aos -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="./app.js"></script>
+ 
   </body>
 </html>

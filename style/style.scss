@@ -14,13 +14,13 @@ body {
   background-color: #F4F0E9;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 * {
   margin: 0;
   padding: 0;
-  border: none;
+  border: none; 
 }
 // colors
 
@@ -205,22 +205,26 @@ header.smaller h1#logo {
       height: 100vh;
       position: relative;
     }
+    .container {
+      position: relative ; 
+      height: 100%;
+      width: 100%;
+      
+      .banner, .belowBanner { 
+        position: absolute ; 
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color : $logo;
+        font-size: 40px;
+        font-weight: bold; 
+      }
 
-    .banner, .belowBanner { 
-      position: absolute ; 
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-      color : $logo;
-      font-size: 40px;
-      font-weight: bold; 
+      .belowBanner { 
+        top : 60%; 
+        font-size: 20px;
+      }
     }
-
-    .belowBanner { 
-      top : 60%; 
-      font-size: 20px;
-    }
-
       a {
       position: absolute;
       left: 50%;
@@ -238,7 +242,7 @@ header.smaller h1#logo {
       transition: all 200ms;
 
       &:hover {
-          background-color: $logo; 
+          background-color: rgba(34, 34, 34, 0.376); 
         color: $header
       }
 
@@ -257,6 +261,8 @@ header.smaller h1#logo {
       margin: 50px 0 ; 
       padding: 0 50px ; 
       border-radius: 10px;
+      
+  overflow: hidden;
 
 
       .first {
@@ -284,7 +290,7 @@ header.smaller h1#logo {
         margin: 0 auto;
         padding: 50px 0;
         line-height: 30px;
-        font-size: 18px ; 
+        font-size: 17px ; 
         font-family: 'Noto Sans JP', sans-serif;
 
       }
@@ -300,6 +306,7 @@ header.smaller h1#logo {
     grid-template-rows: none; 
     width: 90%;
     margin: 100px auto;
+    overflow: hidden;
 
     .first { 
 
@@ -343,3 +350,34 @@ header.smaller h1#logo {
 
 
 
+
+
+
+
+  // css delays 
+
+  .logo {
+    animation-delay: 900ms;
+  }
+  
+  .fa-heart {
+    animation-delay: 1250ms;
+  }
+
+  .bg , .menu {
+    animation-delay: 800ms;
+    animation: fadein 1400ms forwards;
+
+    @keyframes fadein {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+  }
+
+  .fa-shopping-cart { 
+    animation-delay: 1500ms;
+  }
+
+  .landingdelay { 
+    animation-delay: 700ms;
+  }

@@ -20,3 +20,8 @@ btnEl.addEventListener("click", e => {
   document.querySelector(".menu-icon-wrapper").classList.toggle("open");
   document.querySelector(".sidebar").classList.toggle("is-active");
 });
+
+
+
+//aos 
+AOS.init();
