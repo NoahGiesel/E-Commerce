@@ -82,6 +82,12 @@ header.smaller h1#logo {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 500px) {
+  .navigation-ul {
+    display: none;
+  }
+}
+
 .navigation-ul a {
   text-decoration: none;
   color: #333;
@@ -114,6 +120,20 @@ header.smaller h1#logo {
   right: 5%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+  #outer {
+    -webkit-transform: translate(-50%, -50%) scale(1.3);
+            transform: translate(-50%, -50%) scale(1.3);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #outer {
+    -webkit-transform: translate(-50%, -50%) scale(1.4);
+            transform: translate(-50%, -50%) scale(1.4);
+  }
 }
 
 .menu-icon-wrapper {
@@ -218,9 +238,31 @@ header.smaller h1#logo {
   font-weight: bold;
 }
 
+@media screen and (max-width: 500px) {
+  .landing .container .banner, .landing .container .belowBanner {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .landing .container .banner, .landing .container .belowBanner {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
 .landing .container .belowBanner {
   top: 60%;
   font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .landing .container .belowBanner {
+    font-size: 16px;
+  }
 }
 
 .landing a {
@@ -259,6 +301,26 @@ header.smaller h1#logo {
   padding: 0 50px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .threeCol {
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .threeCol {
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    padding: 0 10px;
+  }
 }
 
 .threeCol .first {
@@ -308,6 +370,24 @@ header.smaller h1#logo {
   overflow: hidden;
 }
 
+@media screen and (max-width: 500px) {
+  .twoColSection {
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .twoColSection {
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
 .twoColSection .first {
   text-align: center;
   margin: auto 0;
@@ -319,11 +399,41 @@ header.smaller h1#logo {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 500px) {
+  .twoColSection .first h5 {
+    margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .twoColSection .first h5 {
+    margin: 50px auto;
+  }
+}
+
 .twoColSection .first p {
   margin: 20px auto;
   width: 70%;
   line-height: 28px;
   font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .twoColSection .first p {
+    margin: 50px auto;
+    font-size: 23px;
+    width: 90%;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .twoColSection .first p {
+    margin: 50px auto;
+    font-size: 25px;
+    width: 90%;
+    line-height: 35px;
+  }
 }
 
 .twoColSection img {
@@ -393,6 +503,26 @@ footer {
   text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  footer {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    height: auto;
+  }
+}
+
 footer h3 {
   font-size: 20px;
   text-transform: uppercase;
@@ -401,11 +531,35 @@ footer h3 {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 500px) {
+  footer h3 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer h3 {
+    font-size: 32px;
+  }
+}
+
 footer p {
   font-size: 16px;
   letter-spacing: 1px;
   margin: 7px 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer p {
+    font-size: 24px;
+  }
 }
 
 footer p:hover {

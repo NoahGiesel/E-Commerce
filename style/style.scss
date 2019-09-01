@@ -96,6 +96,13 @@ header.smaller h1#logo {
   right: 10%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+
+
     a {
         text-decoration: none;
         color: $logo; 
@@ -121,7 +128,18 @@ header.smaller h1#logo {
     position: absolute;
     top: 50%;
     right : 5% ; 
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
+
+    @media screen and (max-width: 500px) {
+      transform: translate(-50%,-50%)scale(1.3);
+
+    }
+    
+
+    @media screen and (max-width: 800px) {
+      transform: translate(-50%,-50%)scale(1.4);
+
+    }
     
   }
   
@@ -218,11 +236,31 @@ header.smaller h1#logo {
         color : $logo;
         font-size: 40px;
         font-weight: bold; 
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+
       }
 
       .belowBanner { 
         top : 60%; 
         font-size: 20px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 16px;
+
+        }
       }
     }
       a {
@@ -263,6 +301,19 @@ header.smaller h1#logo {
       border-radius: 10px;
       overflow: hidden;
 
+      @media screen and (max-width: 500px) {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: none;
+        padding: 0 10px;
+
+      }
+
+      @media screen and (max-width: 800px) {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: none;
+        padding: 0 10px;
+
+      }
 
       .first {
         background:  $headerDark;
@@ -307,6 +358,18 @@ header.smaller h1#logo {
     margin: 100px auto;
     overflow: hidden;
 
+
+    @media screen and (max-width: 500px) {
+      grid-template-rows: auto auto; 
+      grid-template-columns: none; 
+    }
+
+
+    @media screen and (max-width: 800px) {
+      grid-template-rows: auto auto; 
+      grid-template-columns: none; 
+    }
+
     .first { 
 
       text-align: center;
@@ -316,12 +379,42 @@ header.smaller h1#logo {
             font-size: 30px;
             text-transform: uppercase;
             margin: 10px 0 ; 
+
+
+            @media screen and (max-width: 500px) {
+              margin: 50px auto;
+            }
+
+
+            @media screen and (max-width: 800px) {
+              margin: 50px auto;
+            }
+
           }
           p{ 
             margin: 20px auto ; 
             width: 70%;
             line-height: 28px;
             font-size: 18px;
+
+
+            @media screen and (max-width: 500px) {
+              margin: 50px auto;
+              font-size: 23px;
+              width: 90%;
+              line-height: 35px;
+            }
+            
+
+            @media screen and (max-width: 800px) {
+              margin: 50px auto ;
+              font-size: 25px;
+              width: 90%;
+              line-height: 35px;
+            }
+            
+
+             
           } 
       }
 
@@ -399,12 +492,37 @@ header.smaller h1#logo {
         grid-template-rows: none;
         text-align: center;
 
+        @media screen and (max-width: 500px) {
+          grid-template-rows: auto auto auto auto;
+          grid-template-columns: none;
+          height: auto;
+          
+        }
+
+        @media screen and (max-width: 800px) {
+          grid-template-rows: auto auto auto auto;
+          grid-template-columns: none;
+          height: auto; 
+          
+        }
+
         h3 {
           font-size: 20px;
           text-transform: uppercase;
           margin: 50px 0 15px 0;
           font-family: 'Courier New', Courier, monospace;
           letter-spacing: 1px;
+
+          
+          
+          @media screen and (max-width: 500px) {
+            font-size: 25px
+          }
+          
+          @media screen and (max-width: 800px) {
+            font-size: 32px
+          }
+
         }
 
         p {
@@ -412,6 +530,14 @@ header.smaller h1#logo {
           letter-spacing: 1px;
           margin: 7px 0;
           cursor: pointer; 
+
+          @media screen and (max-width: 500px) {
+            font-size: 20px
+          }
+
+          @media screen and (max-width: 800px) {
+            font-size: 24px
+          }
 
           &:hover {
             text-decoration: underline;
