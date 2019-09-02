@@ -288,6 +288,12 @@ header.smaller h1#logo {
   }
 
 
+  //id for href
+
+  #threeCol {
+    width: 100%;
+  }
+
 
 
   // three col section 
@@ -342,6 +348,13 @@ header.smaller h1#logo {
         line-height: 30px;
         font-size: 17px ; 
         font-family: 'Noto Sans JP', sans-serif;
+ 
+
+        @media screen and (max-width: 800px) {
+
+          text-align: center;
+        }
+
 
       }
   }
@@ -400,7 +413,7 @@ header.smaller h1#logo {
 
             @media screen and (max-width: 500px) {
               margin: 50px auto;
-              font-size: 23px;
+              font-size: 20px;
               width: 90%;
               line-height: 35px;
             }
@@ -496,6 +509,7 @@ header.smaller h1#logo {
           grid-template-rows: auto auto auto auto;
           grid-template-columns: none;
           height: auto;
+          padding: 20px 0;
           
         }
 
@@ -532,11 +546,11 @@ header.smaller h1#logo {
           cursor: pointer; 
 
           @media screen and (max-width: 500px) {
-            font-size: 20px
+            font-size: 13px
           }
 
           @media screen and (max-width: 800px) {
-            font-size: 24px
+            font-size: 17px
           }
 
           &:hover {

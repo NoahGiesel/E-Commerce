@@ -290,6 +290,10 @@ header.smaller h1#logo {
   color: #f8f8f8;
 }
 
+#threeCol {
+  width: 100%;
+}
+
 .threeCol {
   display: -ms-grid;
   display: grid;
@@ -358,6 +362,12 @@ header.smaller h1#logo {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+@media screen and (max-width: 800px) {
+  .threeCol p {
+    text-align: center;
+  }
+}
+
 .twoColSection {
   display: -ms-grid;
   display: grid;
@@ -421,7 +431,7 @@ header.smaller h1#logo {
 @media screen and (max-width: 500px) {
   .twoColSection .first p {
     margin: 50px auto;
-    font-size: 23px;
+    font-size: 20px;
     width: 90%;
     line-height: 35px;
   }
@@ -510,6 +520,7 @@ footer {
     -ms-grid-columns: none;
         grid-template-columns: none;
     height: auto;
+    padding: 20px 0;
   }
 }
 
@@ -552,13 +563,13 @@ footer p {
 
 @media screen and (max-width: 500px) {
   footer p {
-    font-size: 20px;
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 800px) {
   footer p {
-    font-size: 24px;
+    font-size: 17px;
   }
 }
 
