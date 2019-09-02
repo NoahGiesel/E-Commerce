@@ -102,6 +102,12 @@ header.smaller h1#logo {
     display: none;
   }
 
+  
+  @media screen and (min-width: 1500px) {
+    transform: translate(-50%,-50%)scale(1.45);
+
+  }
+
 
     a {
         text-decoration: none;
@@ -138,6 +144,11 @@ header.smaller h1#logo {
 
     @media screen and (max-width: 800px) {
       transform: translate(-50%,-50%)scale(1.4);
+
+    }
+
+    @media screen and (min-width: 1500px) {
+      transform: translate(-50%,-50%)scale(1.6);
 
     }
     
@@ -249,6 +260,14 @@ header.smaller h1#logo {
             font-size: 40px;
         }
 
+              
+        @media screen and (min-width: 1500px) {
+          font-size: 65px;
+          width: 100%;
+          text-align: center;
+
+        }
+
 
 
       }
@@ -261,6 +280,15 @@ header.smaller h1#logo {
           font-size: 16px;
 
         }
+
+            
+        @media screen and (min-width: 1500px) {
+          font-size: 30px;
+          width: 100%;
+          text-align: center;
+
+        }
+
       }
     }
       a {
@@ -282,6 +310,12 @@ header.smaller h1#logo {
       &:hover {
           background-color: rgba(34, 34, 34, 0.376); 
         color: $header
+      }
+
+          
+      @media screen and (min-width: 1500px) {
+        font-size: 25px; 
+
       }
 
     }
@@ -350,10 +384,16 @@ header.smaller h1#logo {
         font-family: 'Noto Sans JP', sans-serif;
  
 
-        @media screen and (max-width: 800px) {
-
+        @media screen and (max-width: 800px) { 
           text-align: center;
-        }
+        } 
+
+        
+          
+      @media screen and (min-width: 1500px) {
+        font-size: 25px; 
+        line-height: 40px;
+      }
 
 
       }
@@ -383,6 +423,8 @@ header.smaller h1#logo {
       grid-template-columns: none; 
     }
 
+    
+
     .first { 
 
       text-align: center;
@@ -403,6 +445,10 @@ header.smaller h1#logo {
               margin: 50px auto;
             }
 
+                    
+            @media screen and (min-width: 1500px) {
+              font-size: 50px;  
+            }
           }
           p{ 
             margin: 20px auto ; 
@@ -426,7 +472,11 @@ header.smaller h1#logo {
               line-height: 35px;
             }
             
-
+  
+            @media screen and (min-width: 1500px) {
+              font-size: 30px; 
+              line-height: 50px;
+            }
              
           } 
       }
@@ -471,6 +521,13 @@ header.smaller h1#logo {
           font-weight: bold;
           letter-spacing: 3px;
           font-family: 'Noto Sans JP', sans-serif; 
+
+          
+          @media screen and (min-width: 1500px) {
+            font-size: 60px; 
+            line-height: 50px;
+          }
+
         }
 
         input {
@@ -478,6 +535,15 @@ header.smaller h1#logo {
           padding: 12px 40px;
           width: 40%;
           border: 1px solid black;
+
+
+          
+          @media screen and (min-width: 1500px) {
+            font-size: 30px; 
+            line-height: 50px;
+          }
+
+
         }
 
         button { 
@@ -485,6 +551,13 @@ header.smaller h1#logo {
           color: $header;
           background-color: $logo;
           cursor: pointer;
+
+          
+          @media screen and (min-width: 1500px) {
+            font-size: 30px; 
+            line-height: 50px;
+          }
+
         }
 
       }
@@ -537,6 +610,13 @@ header.smaller h1#logo {
             font-size: 32px
           }
 
+          
+          @media screen and (min-width: 1500px) {
+            font-size: 30px; 
+            line-height: 50px;
+          }
+
+
         }
 
         p {
@@ -551,6 +631,11 @@ header.smaller h1#logo {
 
           @media screen and (max-width: 800px) {
             font-size: 17px
+          }
+
+          
+          @media screen and (min-width: 1500px) {
+            font-size: 20px; 
           }
 
           &:hover {
