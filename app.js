@@ -12,13 +12,23 @@ function resizeHeaderOnScroll() {
 
 window.addEventListener("scroll", resizeHeaderOnScroll);
 
-// hamburger
+ // hamburger
+ let toggledTrue = false ; 
 
 const btnEl = document.getElementById("menu-icon-trigger");
+const menu = document.getElementById("navigation_menu");
 btnEl.addEventListener("click", e => {
   e.preventDefault();
-  document.querySelector(".menu-icon-wrapper").classList.toggle("open");
-  document.querySelector(".sidebar").classList.toggle("is-active");
+  document.querySelector(".menu-icon-wrapper").classList.toggle("open"); 
+  
+  if(toggledTrue) {
+     menu.style.transform ="translateY(-101%)"
+    toggledTrue = !toggledTrue
+  } else {
+     menu.style.transform ="translateY(0)"
+    toggledTrue = !toggledTrue
+
+  }
 });
 
 

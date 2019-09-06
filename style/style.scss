@@ -17,6 +17,9 @@ body {
   scroll-behavior: smooth; 
 }
 
+body {
+  //overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +49,7 @@ header.smaller nav a {
   box-sizing: border-box;
 }
 
-//
+// header
 
 header {
   width: 100%;
@@ -58,6 +61,7 @@ header {
   border-bottom: solid 0.5em $header;
   background-color: $header;
   transition: height 0.3s;
+  z-index: 5999;
 }
 
 header h1#logo {
@@ -126,7 +130,7 @@ header.smaller h1#logo {
 
   //hamburger 
 
-  #outer {
+  #outer { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,6 +220,53 @@ header.smaller h1#logo {
       padding: 0;
     }
   }
+
+
+  // navigation menu
+
+  .navigation_menu {
+    position: fixed;
+    top : 0; 
+    left : 0; 
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-101%) ; 
+    background-color: $header;
+    z-index: 1000;
+    transition: all 750ms  ease-out;
+
+    .container { 
+      height: 100%;
+      width: 100%;
+      position: relative;
+      
+      
+      ul {
+        position: absolute;
+        top: 50%;
+        left : 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        list-style: none;
+
+        li { 
+          font-size: 2rem;
+          margin: 50px 0 ; 
+          color: $logo;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+            color: #777;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+
+
 
   //landing
 

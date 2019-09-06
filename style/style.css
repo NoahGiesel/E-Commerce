@@ -42,6 +42,7 @@ header {
   background-color: #f8f8f8;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
+  z-index: 5999;
 }
 
 header h1#logo {
@@ -218,6 +219,49 @@ header.smaller h1#logo {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.navigation_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transform: translateY(-101%);
+          transform: translateY(-101%);
+  background-color: #f8f8f8;
+  z-index: 1000;
+  -webkit-transition: all 750ms  ease-out;
+  transition: all 750ms  ease-out;
+}
+
+.navigation_menu .container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.navigation_menu .container ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  list-style: none;
+}
+
+.navigation_menu .container ul li {
+  font-size: 2rem;
+  margin: 50px 0;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.navigation_menu .container ul li:hover {
+  text-decoration: underline;
+  color: #777;
+  cursor: pointer;
 }
 
 .landing {
