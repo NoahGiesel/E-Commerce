@@ -480,6 +480,9 @@ header.smaller h1#logo {
 
       text-align: center;
       margin : auto 0 ; 
+      display: flex ; 
+      justify-content: center;
+      align-items: center;
        
           h5 { 
             font-size: 30px;
