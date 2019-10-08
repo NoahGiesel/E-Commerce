@@ -1,0 +1,26 @@
+{
+  "name": "appForFirm",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "parcel-bundler": "^1.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "parcel index.html",
+    "prod": "parcel build index.html --out-dir prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahGiesel/appForFirm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoahGiesel/appForFirm/issues"
+  },
+  "homepage": "https://github.com/NoahGiesel/appForFirm#readme",
+  "description": ""
+}

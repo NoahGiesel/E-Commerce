@@ -6,7 +6,7 @@ function resizeHeaderOnScroll() {
   if (distanceY > shrinkOn) {
     headerEl.classList.add("smaller");
   } else {
-    headerEl.classList.remove("smaller");
+    headerEl.classList.remove("smaller"); 
   }
 }
 
